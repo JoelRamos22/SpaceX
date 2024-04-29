@@ -1,0 +1,13 @@
+{
+  "name": "spacex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "estructura": "curl -sS https://gist.githubusercontent.com/JoelRamos22/71340bae5c8670fb1db781e01bf8c68e/raw/7f9158529f31763eb52ed24e4b738dc0718ba818/Estructura.sh | bash",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
