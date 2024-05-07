@@ -1,4 +1,4 @@
-import { lookerBar } from "./events/Handlers.js";
+import { locationFinder } from "./events/Handlers.js";
 
 export const eventoDatosClima = () => {
     window.addEventListener('load', () =>{
@@ -7,21 +7,12 @@ export const eventoDatosClima = () => {
         let location = document.querySelector("#location")
         let animatedIcon = document.querySelector("#animatedIcon")
         let vientoVelocidad = document.querySelector("#vientoVelocidad")
-        EncontrarLugar()
+        locationFinder()
     })
 }
-const EncontrarLugar = () => {
-    const place_id = lookerBar(); 
-    if (place_id) {
-        weather(place_id)
-        console.log(place_id)
-    } else {
-        console.log ("no se proporciono lugar de busqueda")
-    }
-}
 
-const weather = async(locationId) => {
-    const response = await(fetch(`https://www.meteosource.com/api/v1/free/point?place_id=${locationId}&sections=all&timezone=UTC&language=en&units=metric&key=rk4so7kqfz8yjyizs405xem9ui1nx1l8xemfsdir`))
+export const weather = async(textid) => {
+    const response = await(fetch(`https://www.meteosource.com/api/v1/free/point?place_id=${textid}&sections=all&timezone=UTC&language=en&units=metric&key=rk4so7kqfz8yjyizs405xem9ui1nx1l8xemfsdir`))
     if (!response.ok) {
         throw new Error ("No se obtuvo respuesta de la API")
     }
@@ -35,13 +26,6 @@ const weather = async(locationId) => {
     windSpeed(data, vientoVelocidad)
 }
 
-const Icons = (Object, variable) => {
-    if (!Object.current.icon_num) {
-        throw new Error ("No se encontro el icono buscado para el clima")
-    }
-    variable.textContent = Object.current.icon_num
-    return variable
-}
 const temperatureDescription = (Object, variable) => {
     if (!Object.current.summary) {
         throw new Error ("No se encontro la descripcion de la localidad deseada")

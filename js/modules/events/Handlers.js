@@ -1,16 +1,19 @@
+
+import { weather } from "../app.js";
+
 export const barEvent = (inputElement) => {
     return inputElement.value.trim();
 }
 
-export const lookerBar = () => {
+export const locationFinder = () => {
     const bar = document.querySelector("#searchInput");
-    const looker = document.querySelector("#icon");
-    if (!looker) {
-        throw new Error("No se encontró el icono de búsqueda");
+    const searchIcon = document.querySelector("#icon")
+    if (!searchIcon) {
+        throw console.error (" no se encontro el icono de busqueda")
     }
-    looker.addEventListener('click', () => {
+    searchIcon.addEventListener('click', () => {
         const searchText = barEvent(bar)
-        console.log(searchText)
-        return searchText
+        weather(searchText)
     })
 }
+
