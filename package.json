@@ -2,7 +2,7 @@
   "name": "lista-de-tareas",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
     "dev": "node ./js/main.mjs",

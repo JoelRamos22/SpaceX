@@ -1,5 +1,8 @@
-import { divContainer, divBoxes, containBox0, containBox1, containBox2, weatherTitle } from "./modules/components.js";
+import { divContainer, divBoxes, containBox0, containBox1, containBox2, weatherTitle, searchBar } from "./modules/components/components.js";
 import { eventoDatosClima } from "./modules/app.js";
+// import { looker } from "./modules/events/Handlers.js";
 
-weatherTitle() ,divContainer(); divBoxes(); containBox0(); containBox1(); containBox2() 
-eventoDatosClima()
+//components
+weatherTitle(); searchBar(); divContainer(); divBoxes(); containBox0(); containBox1(); containBox2(); 
+//principal Event
+eventoDatosClima();

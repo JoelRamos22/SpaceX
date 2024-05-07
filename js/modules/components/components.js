@@ -8,14 +8,26 @@ export const divContainer = () => {
     return document.body.appendChild(container)
 }
 
+//search bar 
+
+export const searchBar = () => {
+    const searchLooker = document.createElement("input")
+    searchLooker.type = "search"
+    searchLooker.id = "searchInput"
+    searchLooker.placeholder = "Search your location"
+    return document.body.appendChild(searchLooker)
+}
+
+
 //title creation 
 
 export const weatherTitle = () => {
     const weatherLooker = document.createElement("h1")
     weatherLooker.id = "title"
-    weatherLooker.textContent = "Buscador del clima"
+    weatherLooker.textContent = "Weather in real time"
     return document.body.appendChild(weatherLooker)
 }
+
 
 // weather box creation in container box 
 
@@ -79,7 +91,7 @@ export const containBox2 = () => {
     const fatherBox2 = (fatherBoxLooker("#box2"))
     const firstTittleBox2 = document.createElement("h3")
     const secondTittleBox2 = document.createElement("h1")
-    firstTittleBox2.textContent = "Velocidad del Viento"
+    firstTittleBox2.textContent = "wind Speed"
     secondTittleBox2.id = "vientoVelocidad"
     fatherBox2.appendChild(firstTittleBox2)
     fatherBox2.appendChild(secondTittleBox2)
