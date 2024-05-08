@@ -50,7 +50,7 @@ body {
     width: 28%;
     height: 70%;
     background: #1567aa;
-    gap: 10px;
+    gap: 20px;
     font-size: 1.3em;
     color: azure;
 }
@@ -80,6 +80,11 @@ body {
     font-size: 1em;
     font-weight: 600;
     padding: 5px;
+}
+
+#animatedIcon {
+    width: 75px;
+    height: 75px;
 }
 
 #icon {
