@@ -43,33 +43,30 @@ const weatherIcons = {
     "Rain": "./storage/img/set01/medium/11.png",
     "Possible rain": "./storage/img/set01/medium/12.png",
     "Raing shover": "./storage/img/set01/medium/13.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Mostly sunny": "./storage/img/set01/medium/3.png",
-    "Overcast": "./storage/img/set01/medium/7.png"
+    "Thunderstorm": "./storage/img/set01/medium/14.png",
+    "Local thunderstorm": "./storage/img/set01/medium/15.png",
+    "Light snow": "./storage/img/set01/medium/16.png",
+    "Snow": "./storage/img/set01/medium/17.png",
+    "Possible snow": "./storage/img/set01/medium/18.png",
+    "Snow shower": "./storage/img/set01/medium/19.png",
+    "Rain and snow": "./storage/img/set01/medium/20.png",
+    "Possible rain and snow": "./storage/img/set01/medium/21.png",
+    "Rain and snow": "./storage/img/set01/medium/22.png",
+    "Freezing rain": "./storage/img/set01/medium/23.png",
+    "Possible freezing rain": "./storage/img/set01/medium/24.png",
+    "hail": "./storage/img/set01/medium/25.png",
 }
-const Icons = (Object, icon) => {
-    if (!Object.current.icon) {
+const Icons = (Object, iconElement) => {
+    if (!Object.current.summary) {
         throw new Error ("No se encontro informacion sobre el icono")
     }
-    if (Object.current.summary === "Not available") {
-        icon.src = './storage/img/set01/medium/1.png'
+    const summary = Object.current.summary 
+    const path = weatherIcons[summary]
+    if (!path) {
+        throw new Error ("No se encontro ruta hacia la imagen")
     }
-    return icon
+    iconElement.src = path
+    return iconElement
 }
 
 const weatherLocation = (variable) => {
