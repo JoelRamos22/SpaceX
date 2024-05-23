@@ -4,4 +4,4 @@ Espacio dedicado al repositorio del diseño UI de spaceX basado en su app de lan
 
 ### Resultados finales 
 
-![](C:\Users\SSD256\Documents\Proyectos\SpaceX\storage\img\image.png)
+![](https://github.com/JoelRamos22/SpaceX/blob/main/storage/img/image.png)
