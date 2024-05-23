@@ -32,7 +32,6 @@ export const infoImg = async(imagen)=>{
     imgFist.style.width = "100%";
     imgFist.style.height = "100%";
     imgFist.style.borderRadius = "2px";
-    imgFist.style.boxShadow = "#298BFE 0px 0px 6px 4px";
     div.append(imgFist);
 
     let description__item = document.querySelector("#description__item")
@@ -59,15 +58,6 @@ export const informationRockets = async(country, description)=>{
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
 
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <small>Lorem ipsum dolor sit amet...</small>
-    //     </div>
-    // </div>
 }
 export const informationLaunchCostRocket = async(cost_per_launch)=>{
     let div = document.createElement('div');
@@ -88,16 +78,6 @@ export const informationLaunchCostRocket = async(cost_per_launch)=>{
 
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
-
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <small>Lorem ipsum dolor sit amet...</small>
-    //     </div>
-    // </div>
 }
 export const informationFirstFlightRocket = async(first_flight)=>{
     let div = document.createElement('div');
@@ -118,15 +98,6 @@ export const informationFirstFlightRocket = async(first_flight)=>{
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
 
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <small>Lorem ipsum dolor sit amet...</small>
-    //     </div>
-    // </div>
 }
 export const informationWebRocket = async(wikipedia)=>{
     let div = document.createElement('div');
@@ -147,16 +118,6 @@ export const informationWebRocket = async(wikipedia)=>{
     div.append(divFirst, divLast);
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
-
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 
@@ -183,15 +144,6 @@ export const informationTypeCapsule = async(type)=>{
     description__item.innerHTML="";
     description__item.append(div)
 
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 export const informationStatusCapsule = async(status)=>{
@@ -212,16 +164,6 @@ export const informationStatusCapsule = async(status)=>{
 
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
-
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 export const informationIdCapsule = async(id)=>{
@@ -243,15 +185,6 @@ export const informationIdCapsule = async(id)=>{
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
 
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 export const informationLastUpdateCapsule = async(last_update)=>{
@@ -273,15 +206,6 @@ export const informationLastUpdateCapsule = async(last_update)=>{
     let description__item = document.querySelector("#description__item")
     description__item.append(div)
 
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 export const informationlaunchesCapsule = async(info)=>{
@@ -310,7 +234,7 @@ export const informationlaunchesCapsule = async(info)=>{
             img2.style.width = "100%";
             img2.style.marginTop = "10px";
             img2.style.borderRadius = "2px";
-            img2.style.boxShadow = "#298BFE 0px 0px 6px 4px";
+            img2.style.boxShadow = "#14162C 0px 0px 6px 4px";
             divLast.append(h3, small, img2);
         } else {
             divLast.append(h3, small);
@@ -321,15 +245,6 @@ export const informationlaunchesCapsule = async(info)=>{
     }
     
 
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 
@@ -380,15 +295,6 @@ export const informationDetailsLaunches = async(details)=>{
     section__information__1.innerHTML = "";
     section__information__1.append(div)
 
-    // <div class="description__container">
-    //     <div>
-    //         <img src="http://www.example.com">
-    //     </div>
-    //     <div>
-    //         <h3>Title</h3>
-    //         <a href="#" target="_blank">Lorem</a>
-    //     </div>
-    // </div>
 }
 
 export const imformationSuccessLaunch = async(success)=>{
@@ -532,7 +438,7 @@ export const imformationRocketLaunch = async(Rocket)=>{
     img2.style.width = "100%";
     img2.style.height = "100%";
     img2.style.borderRadius = "2px";
-    img2.style.boxShadow = "#298BFE 0px 0px 6px 4px";
+    img2.style.boxShadow = "#14162C 0px 0px 6px 4px";
     divLast.append(h3, small, img2);
     div.append(divFirst, divLast);
 
@@ -556,7 +462,7 @@ export const imformationImageCrew = async(image)=>{
     imgFist.style.width = "100%";
     imgFist.style.height = "200px";
     imgFist.style.borderRadius = "2px";
-    imgFist.style.boxShadow = "#298BFE 0px 0px 6px 4px";
+    imgFist.style.boxShadow = "#14162C 0px 0px 6px 4px";
     div.append(imgFist);
 
     description__item.append(div)
@@ -667,7 +573,7 @@ export const informationLaunchCrew = async (launch) => {
         img2.style.width = "100%";
         img2.style.height = "200px";
         img2.style.borderRadius = "2px";
-        img2.style.boxShadow = "#298BFE 0px 0px 6px 4px";
+        img2.style.boxShadow = "#14162C 0px 0px 6px 4px";
         divLast.append(h3, small, img2);
         div.append(divFirst, divLast);
 

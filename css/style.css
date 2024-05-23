@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(../storage/img/icons/iconos/galaxy.jpeg);
+    background-image: url(../storage/img/pexels-jmueller-6444367.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -257,6 +257,7 @@ body {
 }
 .rocketimg{
     width: 100%;
+    display: none;
 }
 
 .section__information__3 {
@@ -322,8 +323,11 @@ body {
 }
 
 .footer {
-    background-image:  url(../storage/img/icons/iconos/universo-violeta.jpg);
-    box-shadow: 1px 1px 6px 6px #05264d;
+    background-image:  url(../storage/img/pexels-creationsbyfaik-1025469.jpg);
+    box-shadow: 1px 1px 6px 6px #14162C;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-top-left-radius: 1000px;
     border-top-right-radius: 1000px;
     grid-area: section__footer;
