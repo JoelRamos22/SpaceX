@@ -1,144 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>SpaceX</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <h1>Title</h1>
+        <div id="header__title" class="header__title">
+        </div>
     </header>
     <main class="main">
-        <div class="checks">
-            <div class="checks__container">
-                <div class="container__box1">
-                    <i class='bx bxs-check-circle' style='color:#a4a3a3'></i>
-                    <div class="box__text">
-                        <h3>all systems check</h3>
-                        <p>normal</p>
-                    </div>
-                </div>
-                <div class="container__box2">
-                    <i class='bx bxs-check-circle' style='color:#a4a3a3'></i>
-                    <div class="box__text">
-                        <h3>rendezvous burn slow</h3>
-                        <p>normal</p>
-                    </div>
-                </div>
-                <div class="container__box3">
-                    <i class='bx bxs-check-circle' style='color:#a4a3a3'></i>
-                    <div class="box__text">
-                        <h3>prepare rendezvous burn</h3>
-                        <p>normal</p>
-                    </div>
-                </div>
-                <div class="container__box4">
-                    <i class='bx bxs-check-circle' style='color:#a4a3a3'></i>
-                    <div class="box__text">
-                        <h3>thermal shield</h3>
-                        <p>applied</p>
-                    </div>
-                </div>
-                <div class="container__box5">
-                    <i class='bx bxs-check-circle' style='color:#a4a3a3'></i>
-                    <div class="box__text">
-                        <h3>burn go/no-go</h3>
-                        <p>normal</p>
-                    </div>
-                </div>
-                <div class="container__box6">
-                    <i class='bx bxs-check-circle' style='color:#a4a3a3'></i>
-                    <div class="box__text">
-                        <h3>power completion</h3>
-                        <p>awaiting</p>
-                    </div>
-                </div>
-                <div class="container__box7">
-                    <i class='bx bxs-check-circle' style='color:#a4a3a3'></i>
-                    <div class="box__text">
-                        <h3>station deck check</h3>
-                        <p>normal</p>
-                    </div>
-                </div>
+        <nav class="nav__description">
+            <div id="description__item" class="description__item">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
             </div>
-        </div>
-        <div class="overview">
-            <div class="caja1"></div>
-            <div class="caja2"></div>
-            <div class="caja3"></div>
-            <div class="caja4"></div>
-            <div class="caja5"></div>
-            <div class="caja6"></div>
-            <div class="caja7"></div>
-            <div class="caja8"></div>
-            <div class="caja9"></div>
-        </div>
-        <div class="stats">
-            <div class="stats__container1">
-                <div class="stats__1">
-                    <small class="stats__text">inertial velocity</small>
-                    <div class="container__bar">
-                        <progress value="70" max="100"></progress>
-                        <h3>7.58km/s</h3>
-                    </div>
-                </div>
-                <div class="stats__2">
-                    <small class="stats__text">inertial velocity</small>
-                    <div class="container__bar">
-                        <progress value="70" max="100"></progress>
-                        <h3>7.58km/s</h3>
-                    </div>
-                </div>
-                <div class="stats__3">
-                    <small class="stats__text">inertial velocity</small>
-                    <div class="container__bar">
-                        <progress value="70" max="100"></progress>
-                        <h3>7.58km/s</h3>
-                    </div>
-                </div>
-                <div class="stats__4">
-                    <small class="stats__text">inertial velocity</small>
-                    <div class="container__bar">
-                        <progress value="70" max="100"></progress>
-                        <h3>7.58km/s</h3>
-                    </div>
-                </div>
+            <div class="description__buttom">
+                <!-- <a href="#">a</a>
+                <a href="#">b</a> -->
             </div>
-            <div class="stats__container2">
-                <div class="stats__1">
-                    <small class="stats__text">inertial velocity</small>
-                    <div class="container__bar">
-                        <progress value="70" max="100"></progress>
-                        <h3>7.58km/s</h3>
+        </nav>
+        <section class="main__section">
+            <article id="section__information__1" class="section__information__1">
+                <div class="load" style="height: 150px;"></div>
+            </article>
+            <article class="section__information__container">
+                <div  class="section__information__2">
+                    <div>
+                    </div>
+                    <div id="information__table__1" class="information__table__1">
+                        <div class="load" style="height: 160px;"></div>
                     </div>
                 </div>
-                <div class="stats__1">
-                    <small class="stats__text">inertial velocity</small>
-                    <div class="container__bar">
-                        <progress value="70" max="100"></progress>
-                        <h3>7.58km/s</h3>
+                <div id="section__image" class="section__image">
+                    <div class="rocket">
+                        <img class="rocketimg" src="../storage/img/icons/iconos/astronauta.wepp">
                     </div>
                 </div>
+                <div class="section__information__3">
+                    <div>
+                    </div>
+                    <div id="information__table__2" class="information__table__2">
+                        <div class="load" style="height: 160px;"></div>
+                    </div>
+                </div>
+            </article>
+            <footer class="footer">
+                <ul>
+                    <li id="rocket">
+                        <a class="select" href="#">
+                            <img src="./storage/img/icons/iconos/rocket.svg">
+                            <span>Rocket</span>
+                        </a>
+                    </li>
+                    <li id="capsules">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/life.svg">
+                            <span>Capsule</span>
+                        </a>
+                    </li>
+                    <li id="launches">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/comms.svg">
+                            <span>Launches</span>
+                        </a>
+                    </li>
+                    <li id="Crew">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/prop.svg">
+                            <span>Crew</span>
+                        </a>
+                    </li>
+                    <li id="Cores">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/mech.svg">
+                            <span>Cores</span>
+                        </a>
+                    </li>
+                    <li id="Dragons">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/power.svg">
+                            <span>Dragons</span>
+                        </a>
+                    </li>
+                    <li id="History">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/avionics.svg">
+                            <span>History</span>
+                        </a>
+                    </li>
+                    <li id="Landpads">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/gnc.svg">
+                            <span>Landpads</span>
+                        </a>
+                    </li>
+                    <li id="Launchpads">
+                        <a href="#">
+                            <img src="./storage/img/icons/iconos/thermal.svg">
+                            <span>Launchpads</span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+        <nav class="nav__information">
+            <div id="information__2" class="information__item">
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
+                <div class="load"></div>
             </div>
-        </div>
+            <div id="paginacion" class="information__buttom"></div>
+        </nav>
     </main>
-    <footer class="footer">
-        <div class="systems"></div>
-        <div class="navigation">
-            <div class="nav1"></div>
-            <div class="nav2"></div>
-            <div class="nav3"></div>
-            <div class="nav4"></div>
-            <div class="nav5"></div>
-            <div class="nav6"></div>
-            <div class="nav7"></div>
-            <div class="nav8"></div>
-            <div class="nav9"></div>
-        </div>
-        <div class="more"></div>
-    </footer>
 </body>
 </html>
